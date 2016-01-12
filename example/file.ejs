@@ -1,0 +1,14 @@
+<html lang="<%= lang %>">
+    <head>
+        <meta charset="UTF-8">
+        <title><%= title %></title>
+    </head>
+    <body>
+        <% if (user) { %>
+          <h2><%= user.name %></h2>
+        <% } %>
+        <div class="<%= something ? 'class1' : 'class2' %>">
+            Some text
+        </div>
+    </body>
+</html>
